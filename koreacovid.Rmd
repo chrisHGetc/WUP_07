@@ -27,8 +27,8 @@ state of a patient must be died or alive - we adjust that as well
   
 # Your Question - Is dying independent of sex?
 
-
-
+## Methods 
+The present study aims to conduct an analysis of patients, taking into consideration the variable factor of Sex and its result factor variable. To facilitate the examination of the data and initiate the analysis, a graphical representation will be generated using the ggplot package. Additionally, both numerical and inferential techniques will be employed to further explore and interpret the findings. This will help determine if sex had any impact in the decease. 
 
 
 
@@ -46,7 +46,13 @@ state of a patient must be died or alive - we adjust that as well
 ## Numerical results
 
 
+
+
+
+
 ## Inferential results 
+
+
 
 
 
