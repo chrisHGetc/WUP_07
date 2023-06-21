@@ -67,9 +67,12 @@ According to the numerical data, the study indicates that 56% of females and 44%
 
 ## Inferential results 
 
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
 
-
-
+Within the study population, comprising 1831 females and 1411 males, both genders were found to be alive. Utilizing the chi-square statistic, the analysis reveals a mortality rate of 4.84 for females and 6.17 for males. The corresponding P-value is calculated to be 0.0012, indicating a statistically significant difference. Furthermore, the odds of male individuals succumbing to the condition were found to be 2.3 times higher than their female counterparts.
 
 
 ## Conclusions
