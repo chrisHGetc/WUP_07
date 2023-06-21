@@ -57,9 +57,12 @@ Based on the chart analysis, it is evident that the female population outnumbers
   
 ## Numerical results
 
-
-
-
+```{r}
+table2 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table2)
+colPerc(table2)
+```
+According to the numerical data, the study indicates that 56% of females and 44% of males have survived. Furthermore, it reveals that 36% of females and 64% of males have succumbed to the condition. In terms of mortality, the male deaths exhibit a dominant proportion. In the second result it show 98.7% female adn 97% are males that are alive, and out of thes 1.4% females have died and 3% of males have died.
 
 
 ## Inferential results 
