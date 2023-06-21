@@ -34,10 +34,22 @@ The present study aims to conduct an analysis of patients, taking into considera
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+dd2 <- kRdata %>% group_by(result,Sex) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
 
 
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=result,y=count,fill=Sex))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=result,y=prcnt*100,fill=Sex)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
   
-
+Based on the chart analysis, it is evident that the female population outnumbers the male population. Upon closer examination of the death rate data, it is estimated that males comprise approximately 65% of the fatalities. The box plot further reinforces this observation by illustrating a disproportionately higher percentage of male individuals succumbing to COVID-19.
 
 
 
